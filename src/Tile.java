@@ -1,3 +1,4 @@
+
 public class Tile {
     private final int cordX;
     private final int cordY;
@@ -5,6 +6,7 @@ public class Tile {
     private String color;
     private boolean isEndpoint;
     private boolean isOccupied;
+
 
     public Tile(boolean isDiggable,boolean isEndpoint, String color, int cordX, int cordY) {
         this.isDiggable = isDiggable;
@@ -31,10 +33,16 @@ public class Tile {
         return color;
     }
 
+    public boolean isEndpoint() {
+        return isEndpoint;
+    }
+
     public void setColor(String color) {
         this.color = color;
     }
 
+    // Deals with the dig of the player
+    // Also returns true if end condition is met
     public boolean dig(Tile tile) {
         if (tile.isDiggable) {
             if (tile.isEndpoint) {

@@ -56,4 +56,16 @@ class TileTest {
         tile.setOccupied(true);
         assertTrue(tile.isOccupied());
     }
+    @Test
+    void findTileInGrid(){
+        Grid grid = new Grid();
+        grid.generateGrid(0);
+        Tile[][] tileGrid = grid.getTiles();
+        Tile tile = tileGrid[0][0];
+        assertFalse(tile.isDiggable());
+        assertEquals(tile.getX(),0);
+        assertEquals(tile.getY(),0);
+        assertEquals(tile.getColor(),"white");
+
+    }
 }

@@ -1,23 +1,24 @@
 import javax.imageio.ImageIO;
-import javax.swing.*;
 import java.awt.*;
-
+// Enemy every enemy inherits this with a start position
 public abstract class Enemy {
     protected int x;
     protected int y;
+    protected int startPoistion;
     protected Image image;
     {
         try{
-            image = ImageIO.read(ClassLoader.getSystemResourceAsStream("enemy.png"));
-            image = image.getScaledInstance(30, 30, Image.SCALE_SMOOTH);
+            image = ImageIO.read(ClassLoader.getSystemResourceAsStream("southparkcop.png"));
+            image = image.getScaledInstance(28, 28, Image.SCALE_SMOOTH);
         }catch(Exception e){
             e.printStackTrace();
         }
     }
 
-    public Enemy (int x, int y) {
-        this.x = x;
-        this.y = y;
+    public Enemy (int startPostion) {
+        this.startPoistion = startPostion;
+        y = 1*startPostion;
+        x = 0;
     }
 
     public int getX() {
@@ -37,9 +38,9 @@ public abstract class Enemy {
     }
 
     public void paint(Graphics g) {
-        g.drawImage(image, x, y, null);
+        g.drawImage(image, x*GridPanel.TILE_SIZE, y*GridPanel.TILE_SIZE, null);
     }
 
-    public abstract void move();
+    public abstract void move(Grid grid, Player player);
 
 }

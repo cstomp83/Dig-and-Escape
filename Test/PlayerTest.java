@@ -5,7 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class PlayerTest {
 
     @Test
-    void move() {
+    void moveUp(){
+        Player p = new Player();
+        Grid g = new Grid();
+        g.generateGrid(2);
+        p.move(g,10,19);
+        assertEquals(10,p.getPlayerX());
+        assertEquals(19,p.getPlayerY());
     }
 
     @Test
