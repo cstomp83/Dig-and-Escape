@@ -3,7 +3,7 @@ The Cops are after you! You just made you great escape from prison. Armed with y
 
 # The start panel before the game loads
 
-![Description of Screenshot](screenshots/Start_screen.png)
+![Description of Screenshot](screenshots/Start Screen.png)
 
 ![Description of Screenshot](screenshots/Gameplay.png)
 
