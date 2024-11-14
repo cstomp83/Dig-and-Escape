@@ -1,9 +1,11 @@
 # Dig-and-Escape
 The Cops are after you! You just made you great escape from prison. Armed with your shovel you must dig up the right escape tile before the cops catch you. 
 
-# The start panel
+# How to play
 A, W, S, D is how to move
 X is to dig 
+
+# Start Panel Screenshot
 ![Description of Screenshot](screenshots/Start_Screen.png)
 
 # Gameplay
