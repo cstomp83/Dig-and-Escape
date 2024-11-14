@@ -5,4 +5,4 @@ The Cops are after you! You just made you great escape from prison. Armed with y
 
 
 
-!(gameplay screenshot)[https://github.com/cstomp83/Dig-and-Escape/blob/main/screenshots/Gameplay.png]
+![https://github.com/cstomp83/Dig-and-Escape/blob/main/screenshots/Gameplay.png]
