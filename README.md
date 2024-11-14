@@ -3,6 +3,7 @@ The Cops are after you! You just made you great escape from prison. Armed with y
 
 # How to play
 A, W, S, D is how to move
+
 X is to dig 
 
 # Start Panel Screenshot
